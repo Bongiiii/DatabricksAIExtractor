@@ -18,7 +18,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-UC_VOLUME_PATH = "/Volumes/pdfs/default/sample-files"
+UC_VOLUME_PATH = os.getenv("UC_VOLUME_PATH", "/Volumes/pdfs/default/sample-files")
 
 
 class EnhancedPDFExtractor:
