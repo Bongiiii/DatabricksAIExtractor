@@ -8,3 +8,11 @@ env:
     value: databricks-gpt-oss-120b
   - name: UVICORN_TIMEOUT
     value: "300"
+  - name: UC_VOLUME_PATH
+    value: /Volumes/pdfs/default/sample-files
+resources:
+  - name: sample-files-volume
+    uc_volume:
+      catalog: pdfs
+      schema: default
+      volume: sample-files
