@@ -1,0 +1,19 @@
+# Core AI and PDF Processing
+openai>=1.0.0
+python-dotenv>=1.0.0
+pymupdf>=1.22.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+pillow>=9.0.0
+
+# FastAPI and Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Additional utilities
+pathlib2>=2.3.7
+typing-extensions>=4.8.0
+
+# Optional 
+gunicorn>=21.2.0

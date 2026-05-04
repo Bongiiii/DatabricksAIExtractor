@@ -1,0 +1,10 @@
+command: ["python", "backend/main.py"]
+env:
+  - name: DATABRICKS_SQL_HTTP_PATH
+    value: /sql/1.0/warehouses/5ac3d4c73ee62253
+  - name: VISION_MODEL_NAME
+    value: databricks-gemma-3-12b
+  - name: TEXT_MODEL_NAME
+    value: databricks-gpt-oss-120b
+  - name: UVICORN_TIMEOUT
+    value: "300"
